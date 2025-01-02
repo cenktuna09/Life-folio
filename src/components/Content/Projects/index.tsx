@@ -9,7 +9,7 @@ export const ProjectsContainer = () => {
   }, []);
   return (
     <SectionWrapper>
-      <TitleWrapper>PROJECTS</TitleWrapper>
+      <TitleWrapper>Projects</TitleWrapper>
       <Box>
         {projects.map((project,ind) => (
           <Project project={project} key={ind}/>

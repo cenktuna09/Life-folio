@@ -1,5 +1,5 @@
-import Google from "../assets/google.jpg";
-import Verizon from "../assets/verizon.jpg";
+import OnePercent from "../assets/OnePerc.png";
+import Freelance from "../assets/hacker.png";
 import ProjectImg from "../assets/project.jpg";
 interface Map {
   [key: string]: string | undefined;
@@ -9,12 +9,12 @@ interface Map {
 // google - company name mentioned in Experience.json (lower cased)
 // Google - imported nam
 export const logo: Map = {
-  google: Google,
-  verizon: Verizon,
+  onepercent: OnePercent,
+  freelance: Freelance,
 };
 
 export enum Constants {
-  USERNAME = "Your Name",
+  USERNAME = "Cenk Tuna",
 }
 
 // "project name 1": ProjectImg

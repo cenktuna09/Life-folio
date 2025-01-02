@@ -1,43 +1,69 @@
 [
   {
-    "span": "Year Month -  current",
-    "company": "Google",
-    "linkedIn": "https://www.linkedin.com/company/google/",
-    "twitter": "https://twitter.com/googleindia",
-    "location": "City, State",
+    "span": "2023 July -  current",
+    "company": "OnePercent",
+    "linkedIn": "https://www.onepercent.game/",
+    "twitter": "https://www.onepercent.game/",
+    "location": "London, England",
     "progress": [
       {
-        "role": "Role Name",
-        "span": "Year Month - Current",
+        "role": "Unreal Engine Developer",
+        "span": "2023 July - Current",
         "descriptions": [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-          "In commodi consequatur quidem? Nemo officiis inventore praesentium hic saepe ut delectus"
+          "Nightfall Conquest",
+          "Roguelike Multiplayer Game"
         ]
       },
       {
-        "role": "Role Name",
-        "span": "Year Month - Year Month",
+        "role": "UEFN Developer",
+        "span": "2023 July - Current",
         "descriptions": [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. In commodi consequatur quidem? Nemo officiis inventore praesentium hic saepe ut delectus"
+          "Mission for Speed Fortnite Creative Game"
         ]
       }
     ]
   },
   {
-    "span": "Year July - Year Month",
-    "company": "Google",
-    "location": "City, State",
-    "linkedIn": "https://www.linkedin.com/company/google/",
-    "twitter": "https://twitter.com/googleindia",
+    "span": "",
+    "company": "Freelance",
+    "linkedIn": "https://www.linkedin.com/in/tunacenk/",
+    "twitter": "",
+    "location": "İstanbul, İzmir, Aydın, Türkiye",
     "progress": [
       {
-        "role": "Role Name",
-        "span": "Year Month - Year Month",
+        "role": "VR Event Organization",
+        "span": "",
         "descriptions": [
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. In commodi consequatur quidem? Nemo officiis inventore praesentium hic saepe ut delectus",
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. In commodi consequatur quidem? Nemo officiis inventore praesentium hic saepe ut delectus"
+          "Etkinliklerde Quest 2 ile eğlenceli bir deneyim sağlıyoruz.",
+          "Detaylı bilgi için mail atın."
+        ]
+      },
+      {
+        "role": "Mobile & VR Game Developer",
+        "span": "",
+        "descriptions": [
+          "Kafanızdaki senaryoyu Mobil veya VR oyuna dönüştürelim!",
+          "Detaylı bilgi için mail atın."
+        ]
+      },
+      {
+        "role": "Internet Website Developer",
+        "span": "",
+        "descriptions": [
+          "Portfolyo sitesinden girişiminiz için web adresine kadar geniş bir web deneyimi. React + Domain + Hosting.",
+          "Detaylı bilgi için mail atın."
+        ]
+      },
+      {
+        "role": "Internet Technologies Teknik Yardım",
+        "span": "",
+        "descriptions": [
+          "Tüm teknolojik eşyalarınızda teknik yardım & kurulum & tamir",
+          "Detaylı bilgi için ürününüzü sorununuzla birlikte mail atın."
         ]
       }
+      
     ]
   }
 ]
+

@@ -8,6 +8,7 @@ interface Education {
   span?: string;
   specialization?: string;
   score?: string;
+  youtubeLink?: string; // YouTube video linki
 }
 interface Prop {
   education: Education;
@@ -15,60 +16,72 @@ interface Prop {
 }
 const EducationWrapper = styled(Box)(({ theme }) => ({
   display: "flex",
+  flexDirection: "row", // Varsayılan olarak yatay sıralama
   alignItems: "center",
+  textAlign: "center",
   justifyContent: "space-between",
-  padding: 20,
+  padding: 0,
   "&.reverse": {
     flexDirection: "row-reverse",
   },
-  "& .span": {
-    height: 100,
-    width: 100,
-    border: "1px solid black",
-    background: StyleConstants.EDUCATION_BG,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontWeight: 600,
-    borderRadius: "50%",
+  [theme.breakpoints.down("sm")]: {
+    flexDirection: "column", // Mobil cihazlarda dikey sıralama
   },
-  "& .connector": {
-    background: "black",
-    height: 1,
-    flexGrow: 1,
-  },
-  "& .description": {
-    border: "1px solid black",
-    background: StyleConstants.EDUCATION_BG,
-    padding: 15,
-    width: 450,
-    [theme.breakpoints.down("md")]: {
-      width: 350,
-    },
-    boxSizing: "border-box",
-  },
-  [theme.breakpoints.down("md")]: {
-    flexDirection: "column",
-    padding: 0,
-    "&.reverse": {
-      flexDirection: "column",
+}));
+
+const VideoBox = styled(Box)(({ theme }) => ({
+  flex: 2, 
+  padding: "20px",
+  margin: "20px",
+  backgroundColor: StyleConstants.NAVIGATION_BG,
+  borderRadius: "8px",
+  boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
+  "& iframe": {
+    width: "100%",
+    height: "450px",
+    [theme.breakpoints.down("sm")]: {
+      height: "250px",
     },
   },
 }));
+
+const TextBox = styled(Box)(({ theme }) => ({
+  flex: 1,
+  padding: "20px",
+  margin: "20px",
+  backgroundColor: StyleConstants.NAVIGATION_BG,
+  borderRadius: "8px",
+  boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
+}));
+
 export const Education = ({ education, ind }: Prop) => {
+  const {
+    name = "",
+    course = "",
+    location = "",
+    span = "",
+    specialization = "",
+    score = "",
+    youtubeLink = "",
+  } = education;
+
   return (
     <EducationWrapper className={clsx({ reverse: ind % 2 !== 0 })}>
-      <div className="span">{education.span}</div>
-      <div className="connector"></div>
-      <div className="description">
-        <div>{education.name}</div>
-        <div>{education.location}</div>
-        <div>
-          {education.course}
-          {education.specialization && ` - ${education.specialization}`}
-        </div>
-        <div>{education.score}</div>
-      </div>
+      <VideoBox>
+        <iframe
+          src={youtubeLink}
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </VideoBox>
+      <TextBox>
+        <p>{name}</p>
+        <p>{course}</p>
+        <p>{location}</p>
+        <p>{span}</p>
+        <p>{specialization}</p>
+        <p>{score}</p>
+      </TextBox>
     </EducationWrapper>
   );
 };

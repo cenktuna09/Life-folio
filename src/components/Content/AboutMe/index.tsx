@@ -12,13 +12,14 @@ const AboutMeContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   alignSelf: "center",
   "& img": {
-    width: 400,
+    width: 600,
     [theme.breakpoints.down("sm")]: {
       width: 350,
     },
   },
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
+    width: 350,
   },
 }));
 
@@ -27,9 +28,8 @@ const DetailsWrapper = styled(Box)(({ theme }) => ({
   marginLeft: 15,
   "& .actions": {
     margin: "12px 0",
-  },
-  [theme.breakpoints.down("md")]: {
-    margin: "10px 0 0 0",
+    display: "flex", // Added for flexbox layout
+    justifyContent: "center", // Center horizontally in flex container
   },
 }));
 export const AboutMe = () => {
@@ -39,9 +39,10 @@ export const AboutMe = () => {
 
   return (
     <SectionWrapper>
+
       <TitleWrapper>About Me</TitleWrapper>
       <AboutMeContainer>
-        <img src={MyImage} />
+      <img src={MyImage} />
         <DetailsWrapper>
           <div>{aboutMeInfo.aboutMe}</div>
           <div className="actions">

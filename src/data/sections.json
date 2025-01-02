@@ -22,11 +22,16 @@
   {
     "name": "Skills",
     "key": "skills",
-    "hide":false
+    "hide":true
+  },
+  {
+    "name": "Family",
+    "key": "family",
+    "hide":true
   },
   {
     "name": "Certifications",
     "key": "certifications",
-    "hide":false
+    "hide":true
   }
 ]

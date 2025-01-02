@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.21b7164d.css",
-    "main.js": "/static/js/main.0f895b3a.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "main.css": "/static/css/main.29cfc107.css",
+    "main.js": "/static/js/main.e1827e89.js",
+    "static/js/787.809e933a.chunk.js": "/static/js/787.809e933a.chunk.js",
     "static/media/project.jpg": "/static/media/project.0b9bf4b1eef0f83395b2.jpg",
-    "static/media/resume.pdf": "/static/media/resume.6ecdd069f355ff06099c.pdf",
-    "static/media/education.png": "/static/media/education.3682fa5ac4f8df3fd30d.png",
+    "static/media/resume.pdf": "/static/media/resume.0e64adeba020fb6edb9d.pdf",
+    "static/media/pic.png": "/static/media/pic.bcb85095920659a46bd0.png",
+    "static/media/idea.png": "/static/media/idea.3e7420afd979bf0e8db8.png",
+    "static/media/education.png": "/static/media/education.29ca07cb3dea0ceb446a.png",
+    "static/media/bjkbanner.png": "/static/media/bjkbanner.8b717c957bd9a1b4ad80.png",
+    "static/media/hacker.png": "/static/media/hacker.ccbbc1088ecface4d94b.png",
     "index.html": "/index.html",
-    "main.21b7164d.css.map": "/static/css/main.21b7164d.css.map",
-    "main.0f895b3a.js.map": "/static/js/main.0f895b3a.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.29cfc107.css.map": "/static/css/main.29cfc107.css.map",
+    "main.e1827e89.js.map": "/static/js/main.e1827e89.js.map",
+    "787.809e933a.chunk.js.map": "/static/js/787.809e933a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.21b7164d.css",
-    "static/js/main.0f895b3a.js"
+    "static/css/main.29cfc107.css",
+    "static/js/main.e1827e89.js"
   ]
 }

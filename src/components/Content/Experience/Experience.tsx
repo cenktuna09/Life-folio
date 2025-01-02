@@ -31,9 +31,9 @@ const Wrapper = styled(Box)(({ theme }) => ({
     display: "flex",
     alignItems: "center",
     "& .bullet": {
-      height: 10,
-      minWidth: 10,
-      backgroundColor: "black",
+      height: 5,
+      minWidth: 5,
+      backgroundColor: "white",
       borderRadius: "50%",
       marginRight: 10,
     },
@@ -108,7 +108,7 @@ const Experience = ({ experience }: Prop) => {
                 href={linkedIn}
                 target="_blank"
                 rel="noreferrer"
-                style={{ color: "black" }}
+                style={{ color: "white" }}
               >
                 <LinkedInIcon style={{ marginRight: 6 }} />
               </Link>
@@ -118,7 +118,7 @@ const Experience = ({ experience }: Prop) => {
                 href={twitter}
                 target="_blank"
                 rel="noreferrer"
-                style={{ color: "black" }}
+                style={{ color: "white" }}
               >
                 <TwitterIcon />
               </Link>

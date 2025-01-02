@@ -1,7 +1,7 @@
 import { styled, Box } from "@mui/material";
 import { Constants } from "../../data/constants";
 import { StyleConstants } from "../../styles/StyleConstants";
-
+import BjkBanner from "../../assets/bjkbanner.png";
 const IntroductionContainer = styled(Box)(({ theme }) => ({
   position: "fixed",
   height: 84,
@@ -9,7 +9,11 @@ const IntroductionContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  backgroundColor: StyleConstants.HEADER,
+  color: StyleConstants.WHITE_COLOR,
+  backgroundImage: `url(${BjkBanner})`,
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
   top: 0,
   fontSize: "2em",
   zIndex: 1,
@@ -18,10 +22,11 @@ const IntroductionContainer = styled(Box)(({ theme }) => ({
     fontSize: "1.45em",
   },
 }));
+
 export const Header = () => {
   return (
     <IntroductionContainer>
-      (Lif)E - portfolio of {Constants.USERNAME}
+      {Constants.USERNAME}'dan sevgilerle.
     </IntroductionContainer>
   );
 };

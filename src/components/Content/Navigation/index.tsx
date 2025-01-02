@@ -13,24 +13,35 @@ const NavigationWrapper = styled(Box)(({ theme }) => ({
   flexDirection: "row",
   justifyContent: "center",
   backgroundColor: StyleConstants.NAVIGATION_BG,
+  backdropFilter: "blur(10px)",
+  boxShadow: "0 4px 10px rgba(0, 0, 0, 0.3)", // Gölge efekti
   padding: "0 20px",
-  borderRadius:12,
+  borderRadius: 36,
+  [theme.breakpoints.down("sm")]: {
+    borderRadius: 0, // Mobil cihazlarda köşe yuvarlaklığını sıfırla
+    
+  },
   position: "sticky",
   width: "100%",
   zIndex: 1,
   top: 84,
   "& .nav-section": {
-    padding: 8,
+    padding: 10,
     display: "flex",
     flexDirection: "column",
     "&:hover": {
+      backgroundColor: "rgba(255, 255, 255, 0.2)", // Hover'da arka plan değişikliği
+      boxShadow: "0 0 15px rgba(255, 255, 255, 0.6)", // Hover'da gölge efekti
+      transition: "all 0.3s ease", // Yumuşak geçiş efekti
       transform: "scale(1.1)",
     },
   },
   "& .section-name": {
+     textShadow: "1px 1px 2px black", // Metin gölgesi
     width: 84,
     fontSize: 12,
     display: "flex",
+    color: StyleConstants.WHITE_COLOR,
     justifyContent: "center",
     borderRadius: 10,
   },
@@ -45,11 +56,16 @@ const NavigationWrapper = styled(Box)(({ theme }) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    "&:hover::after": {
+      transform: "scale(1.2)",
+    },
     "& img": {
       height: 58,
       width: 58,
     },
+    
   },
+  
   "& .arrow": {
     margin: "10px 0 0 ",
     height: 70,
@@ -63,6 +79,7 @@ const NavigationWrapper = styled(Box)(({ theme }) => ({
     "& img": {
       height: 58,
       width: 58,
+      
     },
   },
   "& .before": {

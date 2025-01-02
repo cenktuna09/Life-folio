@@ -5,6 +5,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import DiscordIcon from "../../../assets/Discord.png";
 import { CustomButtonFooter } from "../../styles/sectionStyles";
 const FooterContainer = styled(Box)(({ theme }) => ({
   height: 150,
@@ -21,6 +22,7 @@ const FooterContainer = styled(Box)(({ theme }) => ({
     display: "flex",
     padding: 6,
     minWidth: 350,
+    color: StyleConstants.WHITE_COLOR,
     justifyContent: "center",
     alignItems: "center",
     "& svg": {
@@ -66,61 +68,75 @@ const FooterContainer = styled(Box)(({ theme }) => ({
   },
 }));
 export const Footer = () => {
-  const { emailId = "", linkedIn = "", twitter = "", github = "" } = Contact;
+  const { emailId = "", linkedIn = "", twitter = "", github = "", discord ="",} = Contact;
   return (
     <FooterContainer>
-      <Box className="mail">
-        <EmailIcon /> {emailId}
+      <Box className="mail" >
+        
+        <EmailIcon /> {emailId } 
       </Box>
       <Box className="links">
         {github && (
           <div>
-            <Link href={github} target="_blank" style={{ color: "black" }}>
+            <Link href={github} target="_blank" style={{ color: "white" }}>
               <GitHubIcon />
             </Link>
           </div>
         )}
         {linkedIn && (
           <div>
-            <Link href={linkedIn} target="_blank" style={{ color: "black" }}>
+            <Link href={linkedIn} target="_blank" style={{ color: "white" }}>
               <LinkedInIcon />
             </Link>
           </div>
         )}
-        {twitter && (
+        {discord && (
           <div>
-            <Link href={twitter} target="_blank" style={{ color: "black" }}>
+            <Link href={twitter} target="_blank" style={{ color: "white" }}>
               <TwitterIcon />
             </Link>
           </div>
         )}
       </Box>
       <Box className="divider" />
-      <Box className="creator">
-        2022 - Template created by{" "}
-        <a rel="noreferrer" href="https://github.com/harini24" target="_blank">
-          Harini Sivakumar
-        </a>
-      </Box>
       <Box className="actions">
         <CustomButtonFooter>
           <a
             rel="noreferrer"
-            href="https://github.com/harini24/Life-folio/fork"
+            href="https://bjk.com.tr/tr"
             target="_blank"
           >
-            Fork
+            Beşiktaş JK
           </a>
         </CustomButtonFooter>
         <CustomButtonFooter>
           <a
             rel="noreferrer"
-            href="https://github.com/harini24/Life-folio"
+            href="https://chat.openai.com/"
             target="_blank"
           >
-            Star
+            ChatGPT
           </a>
         </CustomButtonFooter>
+        <CustomButtonFooter>
+          <a
+            rel="noreferrer"
+            href="https://app.suno.ai/"
+            target="_blank"
+          >
+            SongAI
+          </a>
+        </CustomButtonFooter>
+        <CustomButtonFooter>
+          <a
+            rel="noreferrer"
+            href="https://www.bbc.co.uk/programmes/b01dmw9x/episodes/player"
+            target="_blank"
+          >
+            BBC Radio
+          </a>
+        </CustomButtonFooter>
+        
       </Box>
     </FooterContainer>
   );

@@ -2,7 +2,7 @@ import { Box, Grid, styled } from "@mui/material";
 import { NavigationList } from "./Navigation";
 import { SectionsRoot } from "./SectionsRoot";
 const Wrapper = styled(Box)(({ theme }) => ({
-  width: "85%",
+  width: "70%",
   margin: "0 auto",
   display: "flex",
   flex: 1,
@@ -10,8 +10,9 @@ const Wrapper = styled(Box)(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "flex-start",
   alignItems: "center",
+  
   [theme.breakpoints.down("sm")]: {
-    width:"92%"
+    width:"100%"
   },
 }));
 export const ContentContainer = () => {
